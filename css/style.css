@@ -9493,12 +9493,23 @@ h1, h2, h3, h4, h5,
 	text-transform: uppercase;
 	display: block;
 	font-weight: 900;
-	background: url(../images/logo-bg.jpg) no-repeat;
+	background: url(../img/logo-bg.jpg) no-repeat;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+.navbar-brand.mobile {
+	display: none;
+}
+@media (max-width: 425px) {
+	.navbar-brand {
+		display: none;
+	}
+	.navbar-brand.mobile {
+		display: block;
+	}
 }
 
 .hero-wrap {
@@ -9582,7 +9593,7 @@ h1, h2, h3, h4, h5,
 	color: #ff0000;
 }
 .hero-wrap .slider-text h1 {
-	font-size: 218px;
+	font-size: 215px;
 	color: #fff;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -9596,21 +9607,28 @@ h1, h2, h3, h4, h5,
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1200px) {
 	.hero-wrap .slider-text h1 {
 		font-size: 180px;
-	}
-	}
-@media (max-width: 767.98px) {
-	.hero-wrap .slider-text h1 {
-		font-size: 100px;
-	}
-	}
-@media (max-width: 1199.98px) {
-	.hero-wrap .slider-text h1 {
 		background-position: center center !important;
 	}
 }
+@media (max-width: 992px) {
+	.hero-wrap .slider-text h1 {
+		font-size: 140px;
+	}
+}
+@media (max-width: 768px) {
+	.hero-wrap .slider-text h1 {
+		font-size: 100px;
+	}
+}
+@media (max-width: 425px) {
+	.hero-wrap .slider-text h1 {
+		font-size: 55px;
+	}
+}
+
 .hero-wrap .slider-text h2 {
 	font-size: 14px;
 	font-weight: 900;
