@@ -10220,6 +10220,9 @@ h1, h2, h3, h4, h5,
 	.text h3 {
 		text-align: center;
 	}
+	#pricing .text h3 {
+		text-align: left;
+	}
 	.icon-container {
 		margin-bottom: 40px;
 	}
